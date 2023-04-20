@@ -2,7 +2,8 @@ import openai
 #import asyncio 
 import os
 
-openai.api_key = "" # nunca dejen sus credenciales dentro del código! pueden hacerlo una variable de ambiente
+# nunca dejen sus credenciales dentro del código! pueden hacerlo una variable de ambiente
+openai.api_key = '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'
 
 def enviar_prompt(prompt, engine="text-davinci-002", temp=0.5, max_tokens=100, top_p=1, frequency_penalty=0, presence_penalty=0):
     respuesta = openai.Completion.create(
